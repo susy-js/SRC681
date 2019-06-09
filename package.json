@@ -1,0 +1,38 @@
+{
+  "name": "@susy-js/src681",
+  "version": "0.1.1",
+  "description": "SRC-681 & SRC-831 parsing",
+  "scripts": {
+    "lint": "echo 'No lint yet'",
+    "test": "npm run build && node ./tests | tap-spec",
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "prepublish": "npm run build"
+  },
+  "author": "Susy Technologies Ltd. <admin@susy.io>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:susy-js/src681"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "rollup": "^0.68.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-peer-deps-external": "^2.0.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  },
+  "files": [
+    "dist"
+  ]
+}
